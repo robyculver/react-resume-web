@@ -27,10 +27,26 @@ resource "heroku_build" "develop" {
     }
 }
 
+resource "heroku_build" "prod" {
+    app = heroku_app.develop.name
+    source = {
+      url = "https://github.com/robyculver/react-resume-web/archive/main.tar.gz"
+      version = "1.0.0"
+    }
+}
+
 resource "heroku_formation" "develop" {
   app        = heroku_app.develop.id
   type       = "web"
   quantity   = 1
-  size       = "Standard-1x"
+  size       = "free"
   depends_on = [heroku_build.develop]
+}
+
+resource "heroku_formation" "prod" {
+  app        = heroku_app.prod.id
+  type       = "web"
+  quantity   = 1
+  size       = "free"
+  depends_on = [heroku_build.prod]
 }
