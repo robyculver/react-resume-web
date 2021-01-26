@@ -32,5 +32,5 @@ resource "heroku_formation" "web" {
   type       = "web"
   quantity   = 1
   size       = "Standard-1x"
-  depends_on = ["heroku_build.web"]
+  depends_on = [heroku_build.web]
 }
