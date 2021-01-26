@@ -19,7 +19,7 @@ resource "heroku_app" "prod" {
   buildpacks = var.heroku_app_buildpacks
 }
 
-resource "heroku_build" "web" {
+resource "heroku_build" "develop" {
     app = heroku_app.develop.name
     source = {
       path = "."
@@ -27,7 +27,7 @@ resource "heroku_build" "web" {
     }
 }
 
-resource "heroku_formation" "web" {
+resource "heroku_formation" "develop" {
   app        = "${heroku_app.develop.id}"
   type       = "web"
   quantity   = 1
