@@ -17,3 +17,10 @@ resource "heroku_app" "prod" {
   buildpacks = var.heroku_app_buildpacks
 }
 
+resource "heroku_build" "web" {
+    app = heroku_app.develop.name
+    source = {
+      path = "."  
+    }
+}
+
