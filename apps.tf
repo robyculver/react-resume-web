@@ -27,11 +27,3 @@ resource "heroku_build" "web" {
     }
 }
 
-# Launch the app's web process by scaling-up
-resource "heroku_formation" "develop" {
-  app        = heroku_app.develop.name
-  type       = "web"
-  quantity   = 1
-  size       = "Standard-1x"
-  depends_on = [heroku_build.web]
-}
