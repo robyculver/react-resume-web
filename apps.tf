@@ -2,6 +2,7 @@
 resource "heroku_app" "develop" {
   name = var.heroku_dev_app
   region = var.heroku_region
+  stack = var.heroku_stack
   config_vars = {
     APP_ENV = "develop"
   }
@@ -11,6 +12,7 @@ resource "heroku_app" "develop" {
 resource "heroku_app" "prod" {
   name = var.heroku_prod_app
   region = var.heroku_region
+  stack = var.heroku_stack
   config_vars = {
     APP_ENV = "prod"
   }
@@ -20,7 +22,16 @@ resource "heroku_app" "prod" {
 resource "heroku_build" "web" {
     app = heroku_app.develop.name
     source = {
-      path = "."  
+      url = "https://github.com/robyculver/react-resume-web"
+      version = 1.0.0
     }
 }
 
+# Launch the app's web process by scaling-up
+resource "heroku_formation" "develop" {
+  app        = heroku_app.develop.name
+  type       = "web"
+  quantity   = 1
+  size       = "Standard-1x"
+  depends_on = [heroku_build.web]
+}

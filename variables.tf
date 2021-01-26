@@ -1,5 +1,6 @@
   
 variable "heroku_pipeline_name" {}
+variable "heroku_stack" {}
 variable "heroku_api_key" {}
 variable "heroku_user" {}
 variable "heroku_dev_app" {}
