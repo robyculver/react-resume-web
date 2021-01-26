@@ -22,7 +22,7 @@ resource "heroku_app" "prod" {
 resource "heroku_build" "develop" {
     app = heroku_app.develop.name
     source = {
-      path = "../"
+      url = "https://github.com/robyculver/react-resume-web.git"
       version = "1.0.0"
     }
 }
