@@ -28,7 +28,7 @@ resource "heroku_build" "develop" {
 }
 
 resource "heroku_build" "prod" {
-    app = heroku_app.develop.name
+    app = heroku_app.prod.name
     source = {
       url = "https://github.com/robyculver/react-resume-web/archive/main.tar.gz"
       version = "1.0.0"
