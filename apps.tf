@@ -27,3 +27,10 @@ resource "heroku_build" "web" {
     }
 }
 
+resource "heroku_formation" "web" {
+  app        = "${heroku_app.develop.id}"
+  type       = "web"
+  quantity   = 1
+  size       = "Standard-1x"
+  depends_on = ["heroku_build.web"]
+}
