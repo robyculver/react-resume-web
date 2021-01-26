@@ -23,7 +23,7 @@ resource "heroku_build" "web" {
     app = heroku_app.develop.name
     source = {
       url = "https://github.com/robyculver/react-resume-web"
-      version = 1.0.0
+      version = "1.0.0"
     }
 }
 
