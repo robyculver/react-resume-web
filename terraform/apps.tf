@@ -37,7 +37,7 @@ resource "heroku_build" "prod" {
 
 resource "heroku_formation" "develop" {
   app        = heroku_app.develop.id
-  type       = "web"
+  type       = "dev"
   quantity   = 1
   size       = "free"
   depends_on = [heroku_build.develop]
@@ -45,7 +45,7 @@ resource "heroku_formation" "develop" {
 
 resource "heroku_formation" "prod" {
   app        = heroku_app.prod.id
-  type       = "web"
+  type       = "prod"
   quantity   = 1
   size       = "free"
   depends_on = [heroku_build.prod]
