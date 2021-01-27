@@ -25,7 +25,11 @@ export default class About extends Component {
                   {resumeData.address}
                 </span>
                 <br></br>
-                <span><a href={resumeData.website} target={resumeData.website}></a></span>
+                <span>
+                <a href="mailto:robyculver@gmail.com">robyculver@gmail.com</a>
+                <a href="tel:404-435-3248">(404)435-3248</a>
+                <a href={resumeData.gitHubSite}>See Some of My Work on Github</a>
+                </span>
                 </p>
             </div>
         </div>
