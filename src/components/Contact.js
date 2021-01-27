@@ -17,7 +17,7 @@ export default class ContactUs extends Component {
           <h4><a href={resumeData.linkedinId}>Find Me on LinkedIn</a></h4>
           <h4><a href="mailto:robyculver@gmail.com">robyculver@gmail.com</a></h4>
           <h4><a href="tel:404-435-3248">(404)435-3248</a></h4>
-          <h4><a href={resumeData.gitHubSite}</h4>
+          <h4><a href={resumeData.gitHubSite}>See Some of My Work on Github</a></h4>
         </div>
         </aside>
       </div>

@@ -26,8 +26,8 @@ export default class About extends Component {
                 </span>
                 <br></br>
                 <span>
-                <a href="mailto:robyculver@gmail.com">robyculver@gmail.com</a>
-                <a href="tel:404-435-3248">(404)435-3248</a>
+                <a href="mailto:robyculver@gmail.com">robyculver@gmail.com</a><br/>
+                <a href="tel:404-435-3248">(404) 435-3248</a><br/>
                 <a href={resumeData.gitHubSite}>See Some of My Work on Github</a>
                 </span>
                 </p>

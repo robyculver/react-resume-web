@@ -101,58 +101,72 @@ let resumeData =
         "skills": [
           {
             "skillname": "Python",
-            "skillability": "95%"
+            "skillability": "95%",
+            "skillabilitywidth": "width:95%"
           },
           {
             "skillname": "Bash",
-            "skillability": "95%"
+            "skillability": "95%",
+            "skillabilitywidth": "width:95%"
           },
           {
             "skillname": "Linux",
-            "skillability": "95%" 
+            "skillability": "95%",
+            "skillabilitywidth": "width:95%" 
           },
           {
             "skillname": "Git",
-            "skillability": "95%"
+            "skillability": "95%",
+            "skillabilitywidth": "width:95%"
           },
           {
             "skillname": "Jenkins",
-            "skillability": "95%"
+            "skillability": "95%",
+            "skillabilitywidth": "width:95%"
           },      
           {
             "skillname": "Docker",
-            "skillability": "85%"
+            "skillability": "85%",
+            "skillabilitywidth": "width:85%"
           },
           {
             "skillname": "Scrum, Kanban, ScrumBan",
+            "skillabilitywidth": "width:85%",
             "skillability": "85%"
           },
           {
             "skillname": "Windows Server 2008, 2012, 2016, 2019",
+            "skillabilitywidth": "width:75%",
             "skillability": "75%"
           },
           {
             "skillname": "Powershell",
+            "skillabilitywidth": "width:75%",
             "skillability": "75%"
           },
           {
             "skillname": "Databases(SQL Server, MySql, PostGres, Oracle, NoSQL)",
+            "skillabilitywidth": "width:75%",
             "skillability": "75%"
           },
           {
             "skillname": "AWS, Google Cloud, Azure",
+            "skillabilitywidth": "width:65%",
             "skillability": "65%"
           },
           {
             "skillname": "Circle CI",
+            "skillabilitywidth": "width:65%",
             "skillability": "65%"
           },
           {
             "skillname": "Ansible",
+            "skillabilitywidth": "width:60%",
             "skillability": "60%"
           },
           {
             "skillname": "Terraform",
+            "skillabilitywidth": "width:60%",
             "skillability": "60%"
           }
         ],
