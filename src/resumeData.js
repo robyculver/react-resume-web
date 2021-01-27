@@ -1,9 +1,15 @@
 let resumeData =
     {
-        "imagebaseurl": "https://ivy555.github.io/",
+        "imagebaseurl": "https://github.com/robyculver/react-resume-web",
         "name": "Robert Culver",
         "role": "DevOps & Cloud Engineer",
         "linkedinId": "rculver",
+        "emailMailto": "mailto:robyculver@gmail.com",
+        "telephonehtml": "tel:404-435-3248",
+        "telephonenumber": "(404)435-3248",
+        "website": "http://www.robyculver.com",
+        "gitHubSite": "https://github.com/robyculver/resume-web", 
+        "email": "robyculver@gmail.com",
         "roleDescription": " I like to automate the difficult things.",
         "socialLinks": [
           {
@@ -17,10 +23,9 @@ let resumeData =
             "className": "fa fa-github"
           }
         ],
-        "aboutme": "I am currently a DevOps Engineer for PDI Software that enjoys automating unique solutions to complex software delivery problems.  I have experience working across the complete SDLC with teams of developers to operations to create robust pipelines that speed up feature delivery and meet operational standards.",
+        "aboutme": "I am currently a DevOps Engineer for PDI Software that enjoys automating unique solutions to complex software delivery problems.  I have experience working across the complete SDLC with teams of developers to operations to create robust pipelines that speed up feature delivery and meet operational standards.  I am a self starter that loves to learn new skills and tools.",
         "address": "4820 Village Sq NW, Acworth GA, 30102",
-        "website": "https://github.com/robyculver/resume-web",
-        "email": "robyculver@gmail.com",
+
         "education": [
           {
             "UniversityName": "Georgia State University",
@@ -92,50 +97,64 @@ let resumeData =
             "Achievements": "Provided event support to corporate clients for their on-site IT, Telephony, and Audio-Visual Needs.  Employee of the Year 2007."
           }
         ],
-        "skillsDescription": "Your skills here",
+        "skillsDescription": "Engineering Skills",
         "skills": [
           {
-            "skillname": "Python"
+            "skillname": "Python",
+            "skillability": "95%"
           },
           {
-            "skillname": "Bash"
+            "skillname": "Bash",
+            "skillability": "95%"
           },
           {
-            "skillname": "Powershell"
+            "skillname": "Linux",
+            "skillability": "95%" 
           },
           {
-            "skillname": "Linux"
+            "skillname": "Git",
+            "skillability": "95%"
           },
           {
-            "skillname": "Windows Server 2008, 2012, 2016, 2019"
+            "skillname": "Jenkins",
+            "skillability": "95%"
+          },      
+          {
+            "skillname": "Docker",
+            "skillability": "85%"
           },
           {
-            "skillname": "AWS, Google Cloud, Azure"
+            "skillname": "Scrum, Kanban, ScrumBan",
+            "skillability": "85%"
           },
           {
-            "skillname": "Git"
+            "skillname": "Windows Server 2008, 2012, 2016, 2019",
+            "skillability": "75%"
           },
           {
-            "skillname": "Jenkins"
+            "skillname": "Powershell",
+            "skillability": "75%"
           },
           {
-            "skillname": "Docker"
+            "skillname": "Databases(SQL Server, MySql, PostGres, Oracle, NoSQL)",
+            "skillability": "75%"
           },
           {
-            "skillname": "Circle CI"
+            "skillname": "AWS, Google Cloud, Azure",
+            "skillability": "65%"
           },
           {
-            "skillname": "Ansible"
+            "skillname": "Circle CI",
+            "skillability": "65%"
           },
           {
-            "skillname": "Terraform"
+            "skillname": "Ansible",
+            "skillability": "60%"
           },
           {
-            "skillname": "Databases(SQL Server, MySql, PostGres, Oracle, NoSQL)"
-          },
-          {
-            "skillname": "Scrum, Kanban, ScrumBan"
-          },
+            "skillname": "Terraform",
+            "skillability": "60%"
+          }
         ],
         "testimonials": [
           {
