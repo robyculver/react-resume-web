@@ -47,6 +47,10 @@ resource "heroku_formation" "prod" {
   app        = heroku_app.prod.id
   type       = "web"
   quantity   = 1
-  size       = "free"
+  size       = "hobby"
   depends_on = [heroku_build.prod]
+}
+resource "heroku_addon" "ssl" {
+  app  = heroku_app.prod.name
+  plan = "ssl"
 }
